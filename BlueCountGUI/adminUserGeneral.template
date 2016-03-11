@@ -1,0 +1,78 @@
+
+<script type="text/javascript">
+
+/**
+ * Changes the input value in another
+ * forms when the section 
+ * is changed
+ */
+function sectionChanged(id) 
+{
+  document.getElementsByName('section')[0].value = id;
+  document.getElementsByName('FormAdminUser')[0].submit();
+};
+
+function getHelp(elt)
+{
+  var coords = findPos(elt);
+  var body = document.getElementsByTagName("body")[0];
+  var div = document.createElement("div");
+  var par = document.createElement("p");
+
+  div.style.position = "absolute";
+  div.style.top = coords[1] + 'px';
+  div.style.left = coords[0] + 'px';
+  div.style.width = "300px";
+  div.style.height = "100px";
+  div.style.opacity = "0.85";
+  div.style.backgroundColor = "black";
+
+  body.appendChild(div);
+
+  par.style.top = "0%";
+  par.style.left = "0%";
+  par.style.width = "100%";
+  par.style.height = "100%";
+
+  par = div.appendChild(par);
+
+  par.focus();
+
+  par.onclick = function(e)
+    {
+      this.parentNode.parentNode.removeChild(this.parentNode);
+      return true;
+    }
+}
+
+// @author fabien.pelisson@blueeyevideo.com
+// this function is called on the 
+// onChange event from the Indicator select
+// in the DefaultPage user parameters.
+// When the selected indicator changes then we
+// have to get the corresponding available entities from
+// BlueCountGUILang then the corresponding available entity 
+// elements from the BlueCountLang
+// We use 2 times XmlHTTP request (1) for the Entities select and (2) for the Entity elements select.
+// To get this work properly (recall that we use the same XmlHttp object with async onready callbacks) we must have
+// (1) finished before (2) thus we call the second request in the (1) onready callback.
+function changeIndicator(blueportail)
+{
+  var elt = document.getElementById("SelectAnalysis");
+  BlueCountLang('/BlueCountGUI/BlueCountGUILang.php?function=getEntitiesFromAnalysis&Analysis=' + elt.options[elt.selectedIndex].value + (blueportail ? 'clientBluePortail=' + blueportail : ''), 
+		'u_Entity', 
+		function(id, xmlHttp) { BlueCountLang_ChangeSelect(id, xmlHttp); changeEntity(); });
+}
+
+// @author fabien.pelisson@blueeyevideo.com
+// when defined blueportail unique id must be passed to the url
+// in order to adress the user specific database
+function changeEntity(blueportail)
+{
+  var elt = document.getElementById("SelectEntity");
+  BlueCountLang('/BTopLocalServer/BlueCountLang.php?function=getCountersIds&Entity=' + elt.options[elt.selectedIndex].value + (blueportail ? 'clientBluePortail=' + blueportail : ''), 
+		'u_id', 
+		BlueCountLang_ChangeSelect);
+}
+
+</script>

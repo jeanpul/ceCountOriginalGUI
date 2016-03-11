@@ -1,0 +1,11 @@
+Fab:
+
+Pour générer les bases tout d'abord exécuter
+
+> ./create_db.sh
+
+puis
+
+> ./pushTasks.sh
+
+enfin, modifier le fichier ../Config.inc si nécessaire

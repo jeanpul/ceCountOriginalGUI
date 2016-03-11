@@ -1,0 +1,385 @@
+#
+# Author: fab
+# UtilisÃ©e pour l'interface Web de BlueCountGUI
+#
+
+#
+# BluePHP common terms
+#
+msgid "Menu"
+msgstr "Volver al menú principal"
+
+msgid "Login"
+msgstr "Usuario"
+
+msgid "Passwd"
+msgstr "Contraseña"
+
+msgid "Connect"
+msgstr "Conexión"
+
+msgid "Enter"
+msgstr "Introduce tu nombre de usuario y contraseña"
+
+
+msgid "ErrorMsg"
+msgstr "El siguiente error ocurrió : "
+
+msgid "ErrorMultiple"
+msgstr "Múltiples acceso no válido. Un período de sesiones se encuentra todavía en proceso de click <a href='%s'>aqui</a> para continuar."
+
+msgid "ErrorSession"
+msgstr "No autorizados o expirated período de sesiones"
+
+msgid "ErrorLogin"
+msgstr "Nombre de usuario o contraseña incorrecta"
+
+msgid "Apply"
+msgstr "Aplicar"
+
+msgid "ForTheDay"
+msgstr "Para el día"
+
+msgid "ForThePeriod"
+msgstr "Para el período"
+
+msgid "PeriodFrom"
+msgstr "de"
+
+msgid "PeriodTo"
+msgstr "al"
+
+
+
+#
+# Element in Tops Bar
+#
+
+msgid "Logout"
+msgstr "Sal"
+
+msgid "User"
+msgstr "Usuario"
+
+# date format
+msgid "%a %e %b %Y %Hh"
+msgstr "%a, %e de %b %Y %Hh"
+
+#
+# Top Tabular
+#
+
+msgid "Analysis"
+msgstr "Análisis"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Preferences"
+msgstr "Preferencias"
+
+msgid "Help"
+msgstr "Ayuda"
+
+
+#
+# Site box
+#
+
+msgid "Site"
+msgstr "Sitio"
+
+#
+# Analysis box
+#
+
+msgid "Step"
+msgstr "Tiempo de paso"
+
+msgid "Minute"
+msgstr "Minuto"
+
+msgid "Hour"
+msgstr "Hora"
+
+msgid "Day"
+msgstr "Día"
+
+msgid "Month"
+msgstr "Mes"
+
+msgid "Year"
+msgstr "Año"
+
+msgid "General"
+msgstr "General"
+
+msgid "In/Out flows"
+msgstr "En / De las corrientes"
+
+msgid "Visitors"
+msgstr "Visitantes"
+
+msgid "Numbering"
+msgstr "Ocupación directa"
+
+msgid "Waiting Time"
+msgstr "Tiempo de espera"
+
+msgid "Comparisons"
+msgstr "Comparaciones"
+
+msgid "Occupancy"
+msgstr "Ocupación indirecta"
+
+#
+# Entities box
+#
+
+msgid "Entities"
+msgstr "Entidades"
+
+msgid "Entity"
+msgstr "Entidad"
+
+msgid "Door"
+msgstr "Puerta"
+
+msgid "Group"
+msgstr "Grupo"
+
+msgid "Area"
+msgstr "zona"
+
+msgid "Location"
+msgstr "Lugar"
+
+msgid "with locations"
+msgstr "con lugares"
+
+msgid "and"
+msgstr "y"
+
+#
+# Calendar box
+#
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Calendar"
+msgstr "Calendrio"
+
+#
+# data part
+#
+
+msgid "at"
+msgstr "en"
+
+msgid "vs"
+msgstr "vs"
+
+msgid "for door"
+msgstr "de la puerta"
+
+msgid "to"
+msgstr "al"
+
+msgid "export"
+msgstr "exportación"
+
+msgid "print"
+msgstr "imprimir"
+
+msgid "for location"
+msgstr "para el lugar"
+
+msgid "for area"
+msgstr "para la zona"
+
+msgid "for group"
+msgstr "para el grupo"
+
+msgid "Doors flows comparisons"
+msgstr "Puerta corrientes comparaciones"
+
+msgid "Visitors locations comparisons"
+msgstr "Puerta corrientes comparaciones"
+
+msgid "Location numbering comparisons"
+msgstr "Lugar numeración comparaciones"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Mean"
+msgstr "Media"
+
+msgid "last update %a %e %b %Y %Hh%M"
+msgstr "Última actualización %a %e %b %Y %Hh"
+
+#
+# No data
+#
+msgid "No counting data available for this period."
+msgstr "Sin contar los datos disponibles para este período."
+
+#
+# Admin page
+#
+
+msgid "Default Page"
+msgstr "Página predeterminada"
+
+msgid "Users list administration"
+msgstr "Lista de usuarios de administración"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Access"
+msgstr "Acceso"
+
+msgid "Change"
+msgstr "Cambio"
+
+msgid "Consult"
+msgstr "Consultar"
+
+msgid "User parameters not changed for %s."
+msgstr "El usuario no ha cambiado los parámetros de %s."
+
+msgid "The login %s already exist."
+msgstr "El login %s ya existen."
+
+msgid "User parameters changed for %s."
+msgstr "El usuario ha cambiado los parámetros de %s."
+
+msgid "to returns to the administration menu."
+msgstr "a regresa al menú de administración."
+
+msgid "User preferences saved."
+msgstr "Guardadas las preferencias de los usuarios."
+
+msgid "Return to user administration"
+msgstr "Regresa a la administración de usuarios"
+
+msgid "System name"
+msgstr "Sistema de nombre"
+
+msgid "Current name"
+msgstr "Nombre actual"
+
+msgid "Display"
+msgstr "Mostrar"
+
+msgid "Indicator name"
+msgstr "Indicador nombre"
+
+msgid "Session duration"
+msgstr "Sesión de duración"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Analysis box"
+msgstr "Análisis de caja"
+
+msgid "Entities box"
+msgstr "Entidades caja"
+
+msgid "1 Hour"
+msgstr "1 Hora"
+
+msgid "8 Hours"
+msgstr "8 Horas"
+
+msgid "1 Day"
+msgstr "1 Día"
+
+msgid "Unlimited"
+msgstr "Ilimitado"
+
+msgid "Account enabled"
+msgstr "Cuenta habilitado"
+
+#
+# preference page
+#
+
+msgid "Preferences configuration"
+msgstr "Preferencias de configuración"
+
+msgid "Site title"
+msgstr "Sitio título"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "max."
+msgstr "max."
+
+msgid "kb"
+msgstr "kb"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Preferences updated."
+msgstr "Preferencias de actualización."
+
+msgid "Click"
+msgstr "Click"
+
+msgid "here"
+msgstr "aqui"
+
+msgid "to return to the user preference table."
+msgstr "Para volver a la mesa de preferencia de los utilizadores."
+
+msgid "The logo image resolution is too high %wx%h instead of maximum"
+msgstr "El logotipo de la resolución de la imagen es demasiado alta %wx%h en lugar de máximo"
+
+msgid "The logo file is not an image or it is not in a supported format (jpeg, gif, png, pnm)."
+msgstr "El logo no es un archivo de imagen o no lo es en un formato (jpeg, gif, png, pnm)."
+
+msgid "The logo file is too big"
+msgstr "El logotipo de archivo es demasiado grande"
+
+msgid "instead of maximum"
+msgstr "en lugar de máximo"
+
+msgid "The logo could not be update maybe because of its size or its format."
+msgstr "El logo no se puede actualizar tal vez a causa de su tamaño o de su formato."
+
+msgid "Preferences value reset to default."
+msgstr "Preferencias valor reiniciará por defecto."
+
+#
+# adminUser.php
+#
+
+msgid "French"
+msgstr "Francés"
+
+msgid "English"
+msgstr "Inglés"
+
+msgid "Spanish"
+msgstr "Español"
+
+#
+# help
+#
+
+msgid "BlueCountGUI documentations"
+msgstr "Documentación BlueCountGUI"
+
+msgid "Inline help"
+msgstr "Inline ayuda"
+
+msgid "Document PDF"
+msgstr "Documento PDF"
+
+

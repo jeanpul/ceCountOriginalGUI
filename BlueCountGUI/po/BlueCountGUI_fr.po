@@ -1,0 +1,493 @@
+# Utilisée pour l'interface Web de BlueCountGUI
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# fab <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BlueCountGUI 4370\n"
+"PO-Revision-Date: 2010-01-04 10:35+0100\n"
+"Last-Translator: fabien pélisson <fabien.pelisson@blueeyevideo.com>\n"
+"Language-Team: fr <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#
+# BluePHP common terms
+#
+msgid "Menu"
+msgstr "Revenir au menu principal"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Passwd"
+msgstr "Mot de passe"
+
+msgid "Connect"
+msgstr "Connexion"
+
+msgid "Enter"
+msgstr "Saisissez votre login et mot de passe"
+
+msgid "ErrorMsg"
+msgstr "L'erreur suivante est survenue :"
+
+msgid "ErrorMultiple"
+msgstr "Accès concurrent interdit. Cliquer <a href='%s'>ici</a> pour continuer."
+
+msgid "ErrorSession"
+msgstr "Session expirée ou non autorisée"
+
+msgid "ErrorLogin"
+msgstr "Login ou mot de passe incorrect"
+
+msgid "Apply"
+msgstr "Appliquer"
+
+msgid "ForTheDay"
+msgstr "Pour la journée du"
+
+msgid "Period"
+msgstr "Période"
+
+msgid "ForThePeriod"
+msgstr "Pour la période"
+
+msgid "PeriodFrom"
+msgstr "du"
+
+msgid "PeriodTo"
+msgstr "au"
+
+
+
+#
+# Element in Tops Bar
+#
+
+msgid "Logout"
+msgstr "Déconnexion"
+
+msgid "User"
+msgstr "Utilisateur"
+
+# date format
+msgid "%A %e %B %Y %Hh"
+msgstr "%A %e %B %Y %Hh"
+
+#
+# Top Tabular
+#
+
+msgid "Analysis"
+msgstr "Analyse"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Preferences"
+msgstr "Préférences"
+
+msgid "Help"
+msgstr "Aide"
+
+
+#
+# Site box
+#
+
+msgid "Site"
+msgstr "Site"
+
+#
+# Analysis box
+#
+
+msgid "Step"
+msgstr "Pas de temps"
+
+msgid "Minute"
+msgstr "Minute"
+
+msgid "Hour"
+msgstr "Heure"
+
+msgid "Hour / 1 minute"
+msgstr "Heure / 1 minute"
+
+msgid "Hour / 5 minutes"
+msgstr "Heure / 5 minutes"
+
+msgid "Day"
+msgstr "Jour"
+
+msgid "Day / 1 minute"
+msgstr "Jour / 1 minute"
+
+msgid "Day / quarter-hour"
+msgstr "Jour / quart d'heure"
+
+msgid "Day / hour"
+msgstr "Jour / heure"
+
+msgid "Month"
+msgstr "Mois"
+
+msgid "Year"
+msgstr "Année"
+
+msgid "General"
+msgstr "Général"
+
+msgid "In/Out flows"
+msgstr "Flux d'entrée/sortie"
+
+msgid "Visitors"
+msgstr "Visiteurs"
+
+msgid "Numbering"
+msgstr "Occupation directe"
+
+msgid "Waiting Time"
+msgstr "Temps d'attente"
+
+msgid "Comparisons"
+msgstr "Comparaisons"
+
+msgid "Occupancy"
+msgstr "Occupation indirecte"
+
+#
+# Entities box
+#
+
+msgid "Entities"
+msgstr "Entités"
+
+msgid "Entity"
+msgstr "Entité"
+
+msgid "Door"
+msgstr "Porte"
+
+msgid "Group"
+msgstr "Groupe"
+
+msgid "Area"
+msgstr "Aire"
+
+msgid "Location"
+msgstr "Lieu"
+
+msgid "with locations"
+msgstr "entre les lieux"
+
+msgid "and"
+msgstr "et"
+
+#
+# Calendar box
+#
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Calendar"
+msgstr "Calendrier"
+
+#
+# Format box
+#
+
+msgid "Graphic"
+msgstr "Graphique"
+
+msgid "Tabular"
+msgstr "Tableau"
+
+#
+# data part
+#
+
+msgid "at"
+msgstr "à"
+
+msgid "vs"
+msgstr "vs"
+
+msgid "for door"
+msgstr "pour la porte"
+
+msgid "to"
+msgstr "vers"
+
+msgid "export"
+msgstr "exporter"
+
+msgid "print"
+msgstr "imprimer"
+
+msgid "for location"
+msgstr "du lieu"
+
+msgid "for area"
+msgstr "de l'aire"
+
+msgid "for group"
+msgstr "pour le groupe"
+
+msgid "Doors flows comparisons"
+msgstr "Comparaison des flux par portes"
+
+msgid "Visitors locations comparisons"
+msgstr "Comparaison du nombre de visiteurs par lieu"
+
+msgid "Location numbering comparisons"
+msgstr "Comparaison de dénombrement par lieu"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Mean"
+msgstr "Moyenne"
+
+msgid "last update %A %e %B %Y %Hh%M"
+msgstr "dernière mise à jour %A %e %B %Y %Hh"
+
+msgid "Periods"
+msgstr "Périodes"
+
+msgid "by %d minutes"
+msgstr "par tranche de %d minutes"
+
+msgid "by %d hours"
+msgstr "par tranche de %d hours"
+
+msgid "by %d days"
+msgstr "par tranche de %d jours"
+
+msgid "by %d months"
+msgstr "par tranche de %d mois"
+
+msgid "by minute"
+msgstr "par minute"
+
+msgid "by hour"
+msgstr "par heure"
+
+msgid "by day"
+msgstr "par jour"
+
+msgid "by month"
+msgstr "par mois"
+
+msgid "at %Hh of %B %A %d %Y"
+msgstr "du %A %d %B %Y à %Hh"
+
+msgid "of %B %A %d %Y"
+msgstr "du %A %d %B %Y"
+
+msgid "of %B %Y"
+msgstr "pour %B de l'année %Y"
+
+msgid "of the year %Y"
+msgstr "pour l'année %Y"
+
+msgid "Counts"
+msgstr "Comptages"
+
+msgid "Number of persons"
+msgstr "Nombre de personnes"
+
+msgid "Mean number of persons"
+msgstr "Nombre de personnes moyen"
+
+msgid "Mean waiting time"
+msgstr "Temps d'attente moyen"
+
+msgid "less than %d minutes"
+msgstr "moins de %d minutes"
+
+msgid "between %d and %d minutes"
+msgstr "entre %d et %d minutes"
+
+msgid "more than %d minutes"
+msgstr "plus de %d minutes"
+
+msgid "std dev."
+msgstr "écart type"
+
+#
+# No data
+#
+msgid "No counting data available for this period."
+msgstr "Pas de données disponibles pour cette période."
+
+#
+# Admin page
+#
+
+msgid "User administration"
+msgstr "Administration utilisateur"
+
+msgid "Default Page"
+msgstr "Page par défaut"
+
+msgid "Users list administration"
+msgstr "Gestion des utilisateurs"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "Access"
+msgstr "Accès"
+
+msgid "Change"
+msgstr "Changer"
+
+msgid "Consult"
+msgstr "Consultation"
+
+msgid "User parameters not changed for %s."
+msgstr "Paramètres utilisateurs inchangés pour %s."
+
+msgid "The login %s already exist."
+msgstr "Le login %s existe déjà."
+
+msgid "User parameters changed for %s."
+msgstr "Paramètres utilisateurs changés pour %s."
+
+msgid "to returns to the administration menu."
+msgstr "pour retourner au menu administrateur."
+
+msgid "User preferences saved."
+msgstr "Préférences utilisateur sauvegardées."
+
+msgid "Return to user administration"
+msgstr "Retour à la page administration"
+
+msgid "System name"
+msgstr "Nom système"
+
+msgid "Current name"
+msgstr "Nom actuel"
+
+msgid "Display"
+msgstr "Affichage"
+
+msgid "Indicator name"
+msgstr "Nom de l'indicateur"
+
+msgid "Session duration"
+msgstr "Durée de la session"
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Analysis box"
+msgstr "Choix de l'analyse"
+
+msgid "Indicators list"
+msgstr "Liste des indicateurs"
+
+msgid "Indicator parameters"
+msgstr "Paramètres de l'indicateur"
+
+msgid "Entities box"
+msgstr "Choix de l'entité"
+
+msgid "1 Hour"
+msgstr "1 Heure"
+
+msgid "8 Hours"
+msgstr "8 Heures"
+
+msgid "1 Day"
+msgstr "1 Jour"
+
+msgid "Unlimited"
+msgstr "Illimité"
+
+msgid "Account enabled"
+msgstr "Compte activé"
+
+#
+# preference page
+#
+
+msgid "Preferences configuration"
+msgstr "Réglages des préférences"
+
+msgid "Site title"
+msgstr "Titre du site"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "max."
+msgstr "max."
+
+msgid "kb"
+msgstr "kb"
+
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Preferences updated."
+msgstr "Préférences mises à jour."
+
+msgid "Click"
+msgstr "Cliquer"
+
+msgid "here"
+msgstr "ici"
+
+msgid "to return to the user preference table."
+msgstr "pour retourner à la liste des préférences utilisateurs."
+
+msgid "The logo image resolution is too high %wx%h instead of maximum"
+msgstr "La résolution du logo est trop grande %wx%h par rapport au maximum"
+
+msgid "The logo file is not an image or it is not in a supported format (jpeg, gif, png, pnm)."
+msgstr "Le fichier logo n'est pas une images, ou n'est pas dans un format supporté (jpeg, gif, png, pnm)."
+
+msgid "The logo file is too big"
+msgstr "Le fichier du logo est trop volumineux"
+
+msgid "instead of maximum"
+msgstr "par rapport au maximum"
+
+msgid "The logo could not be update maybe because of its size or its format."
+msgstr "Le logo ne peut être mis à jour à cause de son format ou sa taille."
+
+msgid "Preferences value reset to default."
+msgstr "Préférences remises aux valeurs par défaut."
+
+#
+# adminUser.php
+#
+
+msgid "French"
+msgstr "Français"
+
+msgid "English"
+msgstr "Anglais"
+
+msgid "Spanish"
+msgstr "Espagnol"
+
+#
+# help
+#
+
+msgid "BlueCount Manager documentations"
+msgstr "Documentations de BlueCount Manager"
+
+msgid "Inline help"
+msgstr "Aide en ligne"
+
+msgid "Document PDF"
+msgstr "Document PDF"
+
+

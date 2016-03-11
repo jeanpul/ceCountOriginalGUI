@@ -1,0 +1,52 @@
+<script type="text/javascript">
+
+function dateChanged(calendar) 
+{
+  var y = calendar.date.getFullYear();
+  var m = calendar.date.getMonth() + 1;     // integer, 0..11
+  var d = calendar.date.getDate();      // integer, 1..31
+  var dt = new Date(y,m-1,d,0,0,0);
+  var dateValue = formatDate(dt, 'yyyy-MM-dd');
+  changeIndicatorParameter("0", "DateValue", dateValue);
+  updateIndicatorData("0");
+};
+
+/**
+ * Do not close the calendar when user
+ * select a date.
+ * This is a copy of the function onSelect
+ * where the call to the close function was removed
+ * @see jscalendar/calendar-setup.js
+ */
+function dateSelected(cal) 
+{
+  var p = cal.params;
+  var update = (cal.dateClicked || p.electric);
+  if (update && p.inputField) {
+    p.inputField.value = cal.date.print(p.ifFormat);
+    if (typeof p.inputField.onchange == "function")
+      p.inputField.onchange();
+  }
+  if (update && p.displayArea)
+    p.displayArea.innerHTML = cal.date.print(p.daFormat);
+  if (update && typeof p.onUpdate == "function")
+    p.onUpdate(cal);
+  if (update && p.flat) {
+    if (typeof p.flatCallback == "function")
+      p.flatCallback(cal);
+  }
+};
+
+  Calendar.setup(
+   {
+   inputField: "DateValue",
+		 displayArea: "DateValueDisplayed",
+		 ifFormat: "%Y-%m-%d",
+		 daFormat: "%Y-%m-%d",
+		 button: "trigger",
+		 electric: false, 
+		 onUpdate: dateChanged,
+		 onSelect: dateSelected    
+   } );
+
+</script>

@@ -1,0 +1,22 @@
+{
+  "name": "cecountoriginalgui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanpul/ceCountOriginalGUI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeanpul/ceCountOriginalGUI/issues"
+  },
+  "homepage": "https://github.com/jeanpul/ceCountOriginalGUI#readme",
+  "devDependencies": {
+    "gh-release": "^2.0.2"
+  }
+}

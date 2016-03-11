@@ -1,0 +1,110 @@
+<script language="javascript" type="text/javascript" ><!--
+
+function getIndicatorURLParams(id, toConcat)
+{
+  var elt = document.getElementById(id + "_params");
+  var childs = elt.childNodes;
+  var url = "";
+  for(var i = 0; i < childs.length; i++)
+    {
+      if(childs[i].nodeName == "INPUT")
+	{
+	  if(!toConcat)
+	    {
+       	      url += "?";
+	      toConcat = true;
+	    }
+	  else
+	    {
+	      url += "&";
+	    }
+	  url += childs[i].name + '=' + childs[i].value;
+	}
+    }  
+  return url;
+}
+
+function updateIndicatorContents(id, HTMLHttp)
+{
+  var root = HTMLHttp.responseText;
+  var elt = document.getElementById(id);
+  elt.innerHTML = root;
+}
+
+function updateIndicator(id)
+{
+  var elt = document.getElementById(id + "_params");
+  var childs = elt.childNodes;
+  var url = "Indicators.php" + getIndicatorURLParams(id, false);
+  BlueCountLang(url, id + "_Indicator", updateIndicatorContents);
+}
+
+function updateIndicatorData(id)
+{
+  var elt = document.getElementById(id + "_params");
+  var childs = elt.childNodes;
+  var url = "IndicatorData.php" + getIndicatorURLParams(id, false);
+  BlueCountLang(url, id + "_DataContents", updateIndicatorContents);
+}
+
+function changeIndicatorParameter(id, name, value)
+{
+  var elt = document.getElementById(id + "_params");
+  var childs = elt.childNodes;
+  for(var i = 0; i < childs.length; i++)
+    {
+      if(childs[i].nodeName == "INPUT" && childs[i].name == name)
+	{
+	  childs[i].value = value;
+	  break;
+	}
+    }
+}
+
+function stepChanged(id, value)
+{
+  changeIndicatorParameter(id, "Step", value);
+  updateIndicatorData(id);
+}
+
+function formatChanged(id, value)
+{
+  changeIndicatorParameter(id, "Format", value);
+  updateIndicatorData(id);
+}
+
+function idChanged(id, value)
+{
+  changeIndicatorParameter(id, "id", value);
+  updateIndicatorData(id);
+}
+
+function hourChanged(id, value)
+{
+  changeIndicatorParameter(id, 'HourValue', value);
+  updateIndicatorData(id);
+}
+
+function analysisChanged(id, value) 
+{
+  changeIndicatorParameter(id, 'Analysis', value);
+  var elt = document.getElementById(id + "_params");
+  elt.submit();
+};
+
+function entityChanged(id, value)
+{
+  changeIndicatorParameter(id, 'Entity', value);
+  var url = "/BTopLocalServer/BlueCountLang.php?function=getCountersIds" + getIndicatorURLParams(id, true);
+  BlueCountLang(url,  
+	        id, 
+		function(id, xmlHttp) 
+		{ 
+		   BlueCountLang_ChangeSelect(id + '_id', xmlHttp); 
+		   var elt = document.getElementsByName(id + '_id')[0];
+		   changeIndicatorParameter(id, 'id', elt.options[elt.selectedIndex].value); 
+		   updateIndicatorData(id); 
+		});
+}
+
+--></script>
