@@ -17,7 +17,7 @@ git push origin gh-release
 mkdir -p dist
 # clean previous archives
 (cd dist ; rm -f *.zip )
-zip -r dist/$NAME-v$VERSION.zip BlueCountGUI --exclude '*.git*' --exclude '*~'
+zip -r dist/$NAME-v$VERSION.zip BlueCountGUI BluePortail welcome--exclude '*.git*' --exclude '*~'
 
 # run gh-release to create the tag and push release to github
 ./node_modules/.bin/gh-release --assets dist/$NAME-v$VERSION.zip
